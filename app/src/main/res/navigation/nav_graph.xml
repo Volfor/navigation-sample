@@ -3,27 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@+id/firstFragment"
+    app:startDestination="@id/mainFragment"
     >
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.github.volfor.navigation.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main"
+        >
+
+        <action
+            android:id="@+id/action_mainFragment_to_fourthFragment"
+            app:destination="@id/fourthFragment"
+            />
+    </fragment>
 
     <fragment
-        android:id="@+id/firstFragment"
-        android:name="com.github.volfor.navigation.FirstFragment"
-        android:label="First"
-        tools:layout="@layout/fragment_first"
-        />
-
-    <fragment
-        android:id="@+id/secondFragment"
-        android:name="com.github.volfor.navigation.SecondFragment"
-        android:label="Second"
-        tools:layout="@layout/fragment_second"
-        />
-
-    <fragment
-        android:id="@+id/thirdFragment"
-        android:name="com.github.volfor.navigation.ThirdFragment"
-        android:label="Third"
-        tools:layout="@layout/fragment_third"
+        android:id="@+id/fourthFragment"
+        android:name="com.github.volfor.navigation.FourthFragment"
+        android:label="FourthFragment"
+        tools:layout="@layout/fragment_fourth"
         />
 </navigation>
