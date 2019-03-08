@@ -24,7 +24,7 @@ class ThirdFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         btnOpenFourth.setOnClickListener {
-            navController.navigate(R.id.action_mainFragment_to_fourthFragment)
+            navController.navigate(MainFragmentDirections.actionOpenFourth())
         }
     }
 
