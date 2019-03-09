@@ -1,14 +1,13 @@
-package com.github.volfor.navigation.screens.photos
+package com.github.volfor.navigation.screens.photo.list
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import com.github.volfor.navigation.BR
 import com.github.volfor.navigation.R
-import com.github.volfor.navigation.screens.photos.item.PhotoItem
+import com.github.volfor.navigation.base.BaseEventViewModel
+import com.github.volfor.navigation.screens.photo.list.PhotosFragment.Event
 import me.tatarka.bindingcollectionadapter2.ItemBinding
 
-
-class PhotosViewModel : ViewModel(), PhotoItem.Listener {
+class PhotosViewModel : BaseEventViewModel<PhotosFragment.Event>(), PhotoItem.Listener {
 
     private val photoList = listOf(
         "https://www.projectexcape.it/wp-content/uploads/2017/01/pexels-photo-248159-1.jpg",
@@ -29,7 +28,7 @@ class PhotosViewModel : ViewModel(), PhotoItem.Listener {
     }
 
     override fun onClick(item: PhotoItem) {
-        // TODO()
+        sendEvent(Event.Open(item.photo))
     }
 
     private fun getPhotos(): List<PhotoItem> {

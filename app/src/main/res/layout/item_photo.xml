@@ -7,12 +7,12 @@
 
         <variable
             name="item"
-            type="com.github.volfor.navigation.screens.photos.item.PhotoItem"
+            type="com.github.volfor.navigation.screens.photo.list.PhotoItem"
             />
 
         <variable
             name="listener"
-            type="com.github.volfor.navigation.screens.photos.item.PhotoItem.Listener"
+            type="com.github.volfor.navigation.screens.photo.list.PhotoItem.Listener"
             />
     </data>
 

@@ -8,10 +8,19 @@
 
     <fragment
         android:id="@+id/photosFragment"
-        android:name="com.github.volfor.navigation.screens.photos.PhotosFragment"
+        android:name="com.github.volfor.navigation.screens.photo.list.PhotosFragment"
         android:label="Photos"
         tools:layout="@layout/fragment_photos"
-        />
+        >
+        <action
+            android:id="@+id/action_openPhoto"
+            app:destination="@id/photoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            />
+    </fragment>
 
     <fragment
         android:id="@+id/secondFragment"
@@ -26,4 +35,16 @@
         android:label="Third"
         tools:layout="@layout/fragment_third"
         />
+
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.github.volfor.navigation.screens.photo.PhotoFragment"
+        android:label="fragment_photo"
+        tools:layout="@layout/fragment_photo"
+        >
+        <argument
+            android:name="photo"
+            app:argType="string"
+            />
+    </fragment>
 </navigation>

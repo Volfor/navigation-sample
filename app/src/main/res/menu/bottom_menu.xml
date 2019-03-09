@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/firstFragment"
+        android:id="@+id/photosFragment"
         android:icon="@drawable/ic_one"
-        android:title="First"
+        android:title="Photos"
         />
 
     <item

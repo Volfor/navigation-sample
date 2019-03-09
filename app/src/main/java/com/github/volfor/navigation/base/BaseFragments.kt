@@ -49,5 +49,9 @@ abstract class BaseBoundVmFragment<out TBinding : ViewDataBinding, out TViewMode
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.setVariable(BR.vm, vm)
+        initObservers()
+    }
+
+    open fun initObservers() {
     }
 }

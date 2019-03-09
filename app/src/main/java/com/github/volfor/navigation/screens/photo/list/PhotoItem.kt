@@ -1,4 +1,4 @@
-package com.github.volfor.navigation.screens.photos.item
+package com.github.volfor.navigation.screens.photo.list
 
 data class PhotoItem(
     val photo: String
