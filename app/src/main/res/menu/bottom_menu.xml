@@ -3,19 +3,19 @@
 
     <item
         android:id="@+id/photosFragment"
-        android:icon="@drawable/ic_one"
+        android:icon="@drawable/ic_gallery"
         android:title="Photos"
         />
 
     <item
-        android:id="@+id/secondFragment"
-        android:icon="@drawable/ic_two"
-        android:title="Second"
+        android:id="@+id/favouritesFragment"
+        android:icon="@drawable/ic_heart"
+        android:title="Favourites"
         />
 
     <item
-        android:id="@+id/thirdFragment"
-        android:icon="@drawable/ic_three"
-        android:title="Third"
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
         />
 </menu>

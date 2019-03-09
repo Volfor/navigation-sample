@@ -1,4 +1,4 @@
-package com.github.volfor.navigation
+package com.github.volfor.navigation.utils
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
