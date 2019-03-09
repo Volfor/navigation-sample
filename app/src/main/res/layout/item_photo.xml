@@ -35,7 +35,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:url="@{item.photo}"
+            app:url="@{item.photo.url}"
             tools:src="@tools:sample/backgrounds/scenic"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>

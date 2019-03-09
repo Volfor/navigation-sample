@@ -6,6 +6,7 @@ import com.github.volfor.navigation.base.BaseBoundVmFragment
 import com.github.volfor.navigation.databinding.FragmentPhotosBinding
 import com.github.volfor.navigation.livedata.ViewAction
 import com.github.volfor.navigation.livedata.observeEvent
+import com.github.volfor.navigation.models.Photo
 import com.github.volfor.navigation.screens.photo.list.PhotosFragmentDirections as Directions
 
 class PhotosFragment : BaseBoundVmFragment<FragmentPhotosBinding, PhotosViewModel>(
@@ -13,7 +14,7 @@ class PhotosFragment : BaseBoundVmFragment<FragmentPhotosBinding, PhotosViewMode
     PhotosViewModel::class
 ) {
     sealed class Event : ViewAction {
-        data class Open(val photo: String) : Event()
+        data class Open(val photo: Photo) : Event()
     }
 
     override fun initObservers() {
