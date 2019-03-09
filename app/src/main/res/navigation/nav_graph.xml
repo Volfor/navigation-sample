@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@+id/firstFragment"
+    app:startDestination="@+id/photosFragment"
     >
 
     <fragment
-        android:id="@+id/firstFragment"
-        android:name="com.github.volfor.navigation.FirstFragment"
-        android:label="First"
-        tools:layout="@layout/fragment_first"
+        android:id="@+id/photosFragment"
+        android:name="com.github.volfor.navigation.screens.photos.PhotosFragment"
+        android:label="Photos"
+        tools:layout="@layout/fragment_photos"
         />
 
     <fragment

@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.github.volfor.navigation"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -38,6 +38,15 @@ dependencies {
 
     implementation "android.arch.navigation:navigation-fragment-ktx:$navigation_version"
     implementation "android.arch.navigation:navigation-ui-ktx:$navigation_version"
+
+    implementation "org.koin:koin-android:$koinVersion"
+    implementation "org.koin:koin-androidx-viewmodel:$koinVersion"
+
+    implementation "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:$bindingAdapterVersion"
+    implementation "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:$bindingAdapterVersion"
+
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    kapt "com.github.bumptech.glide:compiler:$glideVersion"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
