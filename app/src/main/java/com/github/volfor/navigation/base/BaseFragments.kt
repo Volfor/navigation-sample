@@ -9,7 +9,7 @@ import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import com.github.volfor.navigation.BR
-import org.koin.androidx.viewmodel.ext.getViewModel
+import org.koin.androidx.viewmodel.ext.android.getViewModel
 import kotlin.reflect.KClass
 
 abstract class BaseFragment(
